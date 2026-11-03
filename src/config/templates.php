@@ -1,0 +1,263 @@
+<?php
+
+use Nwidart\Modules\Activators\FileActivator;
+use Nwidart\Modules\Providers\ModulesConsoleServiceProvider;
+
+
+return [
+
+    /*
+    |--------------------------------------------------------------------------
+    | Module Namespace
+    |--------------------------------------------------------------------------
+    |
+    | Default module namespace.
+    |
+    */
+    'namespace' => 'Templates',
+
+
+    // default template if there is no template chosen
+    'fallback' => 'Bootstrap',
+
+    /*
+    |--------------------------------------------------------------------------
+    | Module Stubs
+    |--------------------------------------------------------------------------
+    |
+    | Default module stubs.
+    |
+    */
+    'stubs' => [
+        'enabled' => false,
+      //  'path' =>  dirname(dirname(__FILE__)).'/stubs',
+       //  'path' => base_path('src/MicroweberPackages/LaravelModules/stubs'),
+         'path' => base_path('src/MicroweberPackages/LaravelTemplates/stubs'),
+        'files' => [
+            'views/index' => 'resources/views/index.blade.php',
+            'views/master' => 'resources/views/layouts/master.blade.php',
+            'scaffold/config' => 'config/config.php',
+            'composer' => 'composer.json',
+            'assets/js/app' => 'resources/assets/js/app.js',
+            'assets/sass/app' => 'resources/assets/sass/app.scss',
+            'vite' => 'vite.config.js',
+            'package' => 'package.json',
+        ],
+        'replacements' => [
+            'vite' => ['LOWER_NAME', 'STUDLY_NAME'],
+            'json' => ['LOWER_NAME', 'STUDLY_NAME', 'MODULE_NAMESPACE', 'PROVIDER_NAMESPACE'],
+            'views/index' => ['LOWER_NAME'],
+            'views/master' => ['LOWER_NAME', 'STUDLY_NAME'],
+            'scaffold/config' => ['LOWER_NAME', 'STUDLY_NAME', 'MODULE_NAMESPACE', 'PROVIDER_NAMESPACE'],
+            'composer' => [
+                'LOWER_NAME',
+                'STUDLY_NAME',
+                'VENDOR',
+                'AUTHOR_NAME',
+                'AUTHOR_EMAIL',
+                'MODULE_NAMESPACE',
+                'PROVIDER_NAMESPACE',
+                'APP_FOLDER_NAME',
+            ],
+        ],
+        'gitkeep' => false,
+    ],
+    'paths' => [
+        /*
+        |--------------------------------------------------------------------------
+        | Modules path
+        |--------------------------------------------------------------------------
+        |
+        | This path is used to save the generated module.
+        | This path will also be added automatically to the list of scanned folders.
+        |
+        */
+        'modules' => (static function () {
+            // Resolve Microweber's bundled Templates dir portably — project root in the
+            // monorepo (== base_path('Templates')), vendor/microweber/microweber/Templates
+            // when microweber is a host dependency. Mirrors the modules-path resolution so
+            // bundled templates are discovered standalone. Falls back to base_path.
+            if (class_exists(\Composer\InstalledVersions::class)
+                && \Composer\InstalledVersions::isInstalled('microweber/microweber')) {
+                $root = \Composer\InstalledVersions::getInstallPath('microweber/microweber');
+                if ($root && is_dir(rtrim($root, '/\\') . DIRECTORY_SEPARATOR . 'Templates')) {
+                    return rtrim($root, '/\\') . DIRECTORY_SEPARATOR . 'Templates';
+                }
+            }
+            return base_path('Templates');
+        })(),
+
+        /*
+        |--------------------------------------------------------------------------
+        | Modules assets path
+        |--------------------------------------------------------------------------
+        |
+        | Here you may update the modules' assets path.
+        |
+        */
+        'assets' => public_path('templates'),
+
+        /*
+        |--------------------------------------------------------------------------
+        | The migrations' path
+        |--------------------------------------------------------------------------
+        |
+        | Where you run the 'module:publish-migration' command, where do you publish the
+        | the migration files?
+        |
+        */
+        'migration' => base_path('database/migrations'),
+
+        /*
+        |--------------------------------------------------------------------------
+        | The app path
+        |--------------------------------------------------------------------------
+        |
+        | app folder name
+        | for example can change it to 'src' or 'App'
+        */
+        'app_folder' => '',
+
+        /*
+        |--------------------------------------------------------------------------
+        | Generator path
+        |--------------------------------------------------------------------------
+        | Customise the paths where the folders will be generated.
+        | Setting the generate key to false will not generate that folder
+        */
+        'generator' => [
+
+            'provider' => ['path' => 'Providers', 'generate' => true],
+            'config' => ['path' => 'config', 'generate' => true],
+            'assets' => ['path' => 'resources/assets', 'generate' => true],
+            'views' => ['path' => 'resources/views', 'generate' => true],
+            'component-class' => ['path' => 'View/Components', 'generate' => false],
+
+        ],
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
+    | Package commands
+    |--------------------------------------------------------------------------
+    |
+    | Here you can define which commands will be visible and used in your
+    | application. You can add your own commands to merge section.
+    |
+    */
+    'commands' => \MicroweberPackages\LaravelTemplates\Providers\TemplatesConsoleServiceProvider::defaultCommands()
+        ->merge([
+
+            // New commands go here
+        ])->toArray(),
+
+    /*
+    |--------------------------------------------------------------------------
+    | Scan Path
+    |--------------------------------------------------------------------------
+    |
+    | Here you define which folder will be scanned. By default will scan vendor
+    | directory. This is useful if you host the package in packagist website.
+    |
+    */
+    'scan' => [
+        // Scan is enabled so the extra drop-in template folders below are also
+        // discovered. The primary base_path('Templates') root is always scanned
+        // via getPath(); enabling scan only ADDS the extra roots. Empty extra
+        // folders glob to nothing, so this is a no-op until a template is
+        // dropped in — boot-safe and additive.
+        'enabled' => true,
+        // Extra drop-in template roots. Folder names are configurable via env
+        // (MW_EXTRA_TEMPLATES_PATH / MW_EXTRA_TEMPLATES_PATH_2) and default to
+        // ExtraTemplates/ and ExtraTemplates2/ at the repo root. Only existing
+        // directories are kept, so a missing folder is silently skipped.
+        'paths' => array_values(array_filter([
+            base_path(env('MW_EXTRA_TEMPLATES_PATH', 'ExtraTemplates')),
+            base_path(env('MW_EXTRA_TEMPLATES_PATH_2', 'ExtraTemplates2')),
+        ], 'is_dir')),
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
+    | Composer File Template
+    |--------------------------------------------------------------------------
+    |
+    | Here is the config for the composer.json file, generated by this package
+    |
+    */
+    'composer' => [
+        'vendor' => env('MODULE_VENDOR', 'microweber'),
+        'author' => [
+            'name' => env('MODULE_AUTHOR_NAME', 'Microweber'),
+            'email' => env('MODULE_AUTHOR_EMAIL', 'info@microweber.com'),
+        ],
+        'composer-output' => false,
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
+    | Caching
+    |--------------------------------------------------------------------------
+    |
+    | Here is the config for setting up the caching feature.
+    |
+    */
+    'cache' => [
+        'enabled' => env('MODULES_CACHE_ENABLED', true),
+        'driver' => env('MODULES_CACHE_DRIVER', 'file'),
+        'key' => env('MODULES_CACHE_KEY', 'laravel-templates'),
+        'lifetime' => env('MODULES_CACHE_LIFETIME', 60000),
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
+    | Choose what laravel-modules will register as custom namespaces.
+    | Setting one to false will require you to register that part
+    | in your own Service Provider class.
+    |--------------------------------------------------------------------------
+    */
+    'register' => [
+        'translations' => true,
+        /**
+         * load files on boot or register method
+         */
+        'files' => 'register',
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
+    | Activators
+    |--------------------------------------------------------------------------
+    |
+    | You can define new types of activators here, file, database, etc. The only
+    | required parameter is 'class'.
+    | The file activator will store the activation status in storage/installed_modules
+    */
+    'activators' => [
+        'file' => [
+            'class' => \MicroweberPackages\LaravelTemplates\Activators\TemplatesFileActivator::class,
+            // Per-site on multisite: each domain gets its own
+            // storage/sites/<domain>/templates_statuses.json (seeded from the
+            // base file on first use), so enabling/disabling a template on one
+            // site never affects another. Single-site keeps the shared file.
+            'statuses-file' => (function_exists('mw_multisite_statuses_path')
+                ? mw_multisite_statuses_path('templates_statuses.json')
+                : storage_path('templates_statuses.json')),
+            'cache-key' => 'templates_activator.installed',
+            'cache-lifetime' => 604800,
+        ],
+        'database' => [
+            'class' => \MicroweberPackages\LaravelTemplates\Activators\LaravelTemplatesDatabaseActivator::class,
+            'table' => 'system_templates',
+            // Distinct from the file activator's key (see modules.php).
+            'cache-key' => 'templates_db_activator.installed',
+            'cache-lifetime' => 604800,
+        ],
+    ],
+
+    // On a multisite domain, store template enable/disable state in the per-site
+    // database (system_templates). Single-site keeps the file activator. An
+    // explicit TEMPLATES_ACTIVATOR env always wins.
+    'activator' => env('TEMPLATES_ACTIVATOR')
+        ?: ((function_exists('mw_multisite_active') && mw_multisite_active()) ? 'database' : 'file')
+];
