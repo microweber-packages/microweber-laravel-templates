@@ -1,1 +1,757 @@
 parameters:
+	ignoreErrors:
+		-
+			message: '#^Access to an undefined property MicroweberPackages\\LaravelTemplates\\Models\\SystemTemplates\:\:\$name\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Activators/LaravelTemplatesDatabaseActivator.php
+
+		-
+			message: '#^Access to an undefined property MicroweberPackages\\LaravelTemplates\\Models\\SystemTemplates\:\:\$status\.$#'
+			identifier: property.notFound
+			count: 2
+			path: src/Activators/LaravelTemplatesDatabaseActivator.php
+
+		-
+			message: '#^Call to an undefined method Illuminate\\Database\\ConnectionInterface\:\:getName\(\)\.$#'
+			identifier: method.notFound
+			count: 2
+			path: src/Activators/LaravelTemplatesDatabaseActivator.php
+
+		-
+			message: '#^Call to method get\(\) on an unknown class Nwidart\\Modules\\Module\.$#'
+			identifier: class.notFound
+			count: 6
+			path: src/Activators/LaravelTemplatesDatabaseActivator.php
+
+		-
+			message: '#^Call to method getDescription\(\) on an unknown class Nwidart\\Modules\\Module\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Activators/LaravelTemplatesDatabaseActivator.php
+
+		-
+			message: '#^Call to method getLowerName\(\) on an unknown class Nwidart\\Modules\\Module\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Activators/LaravelTemplatesDatabaseActivator.php
+
+		-
+			message: '#^Call to method getName\(\) on an unknown class Nwidart\\Modules\\Module\.$#'
+			identifier: class.notFound
+			count: 8
+			path: src/Activators/LaravelTemplatesDatabaseActivator.php
+
+		-
+			message: '#^Call to method getRelativePath\(\) on an unknown class Nwidart\\Modules\\Module\.$#'
+			identifier: class.notFound
+			count: 2
+			path: src/Activators/LaravelTemplatesDatabaseActivator.php
+
+		-
+			message: '#^Call to method json\(\) on an unknown class Nwidart\\Modules\\Module\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Activators/LaravelTemplatesDatabaseActivator.php
+
+		-
+			message: '#^Call to static method make\(\) on an unknown class Nwidart\\Modules\\Json\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Activators/LaravelTemplatesDatabaseActivator.php
+
+		-
+			message: '#^Class Nwidart\\Modules\\Module not found\.$#'
+			identifier: class.notFound
+			count: 2
+			path: src/Activators/LaravelTemplatesDatabaseActivator.php
+
+		-
+			message: '#^Parameter \$module of method MicroweberPackages\\LaravelTemplates\\Activators\\LaravelTemplatesDatabaseActivator\:\:delete\(\) has invalid type Nwidart\\Modules\\Module\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Activators/LaravelTemplatesDatabaseActivator.php
+
+		-
+			message: '#^Parameter \$module of method MicroweberPackages\\LaravelTemplates\\Activators\\LaravelTemplatesDatabaseActivator\:\:hasStatus\(\) has invalid type Nwidart\\Modules\\Module\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Activators/LaravelTemplatesDatabaseActivator.php
+
+		-
+			message: '#^Parameter \$module of method MicroweberPackages\\LaravelTemplates\\Activators\\LaravelTemplatesDatabaseActivator\:\:setActive\(\) has invalid type Nwidart\\Modules\\Module\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Activators/LaravelTemplatesDatabaseActivator.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Foundation\\Application\:\:\$config\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Activators/TemplatesFileActivator.php
+
+		-
+			message: '#^Call to method getName\(\) on an unknown class Nwidart\\Modules\\Module\.$#'
+			identifier: class.notFound
+			count: 6
+			path: src/Activators/TemplatesFileActivator.php
+
+		-
+			message: '#^Class Nwidart\\Modules\\Module not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Activators/TemplatesFileActivator.php
+
+		-
+			message: '#^Parameter \$module of method MicroweberPackages\\LaravelTemplates\\Activators\\TemplatesFileActivator\:\:delete\(\) has invalid type Nwidart\\Modules\\Module\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Activators/TemplatesFileActivator.php
+
+		-
+			message: '#^Parameter \$module of method MicroweberPackages\\LaravelTemplates\\Activators\\TemplatesFileActivator\:\:disable\(\) has invalid type Nwidart\\Modules\\Module\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Activators/TemplatesFileActivator.php
+
+		-
+			message: '#^Parameter \$module of method MicroweberPackages\\LaravelTemplates\\Activators\\TemplatesFileActivator\:\:enable\(\) has invalid type Nwidart\\Modules\\Module\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Activators/TemplatesFileActivator.php
+
+		-
+			message: '#^Parameter \$module of method MicroweberPackages\\LaravelTemplates\\Activators\\TemplatesFileActivator\:\:hasStatus\(\) has invalid type Nwidart\\Modules\\Module\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Activators/TemplatesFileActivator.php
+
+		-
+			message: '#^Parameter \$module of method MicroweberPackages\\LaravelTemplates\\Activators\\TemplatesFileActivator\:\:setActive\(\) has invalid type Nwidart\\Modules\\Module\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Activators/TemplatesFileActivator.php
+
+		-
+			message: '#^Call to an undefined method MicroweberPackages\\LaravelTemplates\\Generators\\TemplateGenerator\:\:setFilesystem\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/Commands/Make/TemplateMakeCommand.php
+
+		-
+			message: '#^Access to an undefined property MicroweberPackages\\LaravelTemplates\\Commands\\Make\\TemplateProviderMakeCommand\:\:\$laravel\.$#'
+			identifier: property.notFound
+			count: 4
+			path: src/Commands/Make/TemplateProviderMakeCommand.php
+
+		-
+			message: '#^Call to an undefined method MicroweberPackages\\LaravelTemplates\\Commands\\Make\\TemplateProviderMakeCommand\:\:argument\(\)\.$#'
+			identifier: method.notFound
+			count: 2
+			path: src/Commands/Make/TemplateProviderMakeCommand.php
+
+		-
+			message: '#^Call to an undefined method MicroweberPackages\\LaravelTemplates\\Commands\\Make\\TemplateProviderMakeCommand\:\:getClass\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/Commands/Make/TemplateProviderMakeCommand.php
+
+		-
+			message: '#^Call to an undefined method MicroweberPackages\\LaravelTemplates\\Commands\\Make\\TemplateProviderMakeCommand\:\:getClassNamespace\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/Commands/Make/TemplateProviderMakeCommand.php
+
+		-
+			message: '#^Call to an undefined method MicroweberPackages\\LaravelTemplates\\Commands\\Make\\TemplateProviderMakeCommand\:\:option\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/Commands/Make/TemplateProviderMakeCommand.php
+
+		-
+			message: '#^Call to an undefined method MicroweberPackages\\LaravelTemplates\\Commands\\Make\\TemplateProviderMakeCommand\:\:path_namespace\(\)\.$#'
+			identifier: method.notFound
+			count: 2
+			path: src/Commands/Make/TemplateProviderMakeCommand.php
+
+		-
+			message: '#^Call to an undefined method MicroweberPackages\\LaravelTemplates\\Commands\\Make\\TemplateProviderMakeCommand\:\:studly_namespace\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/Commands/Make/TemplateProviderMakeCommand.php
+
+		-
+			message: '#^Call to method getLowerName\(\) on an unknown class Nwidart\\Modules\\Module\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Commands/Make/TemplateProviderMakeCommand.php
+
+		-
+			message: '#^Call to method getPath\(\) on an unknown class Nwidart\\Modules\\Support\\Config\\GeneratorPath\.$#'
+			identifier: class.notFound
+			count: 6
+			path: src/Commands/Make/TemplateProviderMakeCommand.php
+
+		-
+			message: '#^Call to method getStudlyName\(\) on an unknown class Nwidart\\Modules\\Module\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Commands/Make/TemplateProviderMakeCommand.php
+
+		-
+			message: '#^Call to method render\(\) on an unknown class Nwidart\\Modules\\Support\\Stub\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Commands/Make/TemplateProviderMakeCommand.php
+
+		-
+			message: '#^Call to method setBasePath\(\) on an unknown class Nwidart\\Modules\\Support\\Stub\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Commands/Make/TemplateProviderMakeCommand.php
+
+		-
+			message: '#^Instantiated class Nwidart\\Modules\\Support\\Stub not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Commands/Make/TemplateProviderMakeCommand.php
+
+		-
+			message: '#^Method MicroweberPackages\\LaravelTemplates\\Commands\\Make\\TemplateProviderMakeCommand\:\:module\(\) has invalid return type Nwidart\\Modules\\Module\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Commands/Make/TemplateProviderMakeCommand.php
+
+		-
+			message: '#^PHPDoc tag @var for variable \$module contains unknown class Nwidart\\Modules\\Module\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Commands/Make/TemplateProviderMakeCommand.php
+
+		-
+			message: '#^Access to an undefined property MicroweberPackages\\LaravelTemplates\\Commands\\Migrate\\TemplateMigrateCommand\:\:\$components\.$#'
+			identifier: property.notFound
+			count: 2
+			path: src/Commands/Migrate/TemplateMigrateCommand.php
+
+		-
+			message: '#^Access to an undefined property MicroweberPackages\\LaravelTemplates\\Commands\\Migrate\\TemplateMigrateCommand\:\:\$laravel\.$#'
+			identifier: property.notFound
+			count: 3
+			path: src/Commands/Migrate/TemplateMigrateCommand.php
+
+		-
+			message: '#^Access to undefined constant MicroweberPackages\\LaravelTemplates\\Commands\\Migrate\\TemplateMigrateCommand\:\:ALL\.$#'
+			identifier: classConstant.notFound
+			count: 4
+			path: src/Commands/Migrate/TemplateMigrateCommand.php
+
+		-
+			message: '#^Call to an undefined method MicroweberPackages\\LaravelTemplates\\Commands\\Migrate\\TemplateMigrateCommand\:\:argument\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/Commands/Migrate/TemplateMigrateCommand.php
+
+		-
+			message: '#^Call to an undefined method MicroweberPackages\\LaravelTemplates\\Commands\\Migrate\\TemplateMigrateCommand\:\:call\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/Commands/Migrate/TemplateMigrateCommand.php
+
+		-
+			message: '#^Call to an undefined method MicroweberPackages\\LaravelTemplates\\Commands\\Migrate\\TemplateMigrateCommand\:\:getDefinition\(\)\.$#'
+			identifier: method.notFound
+			count: 2
+			path: src/Commands/Migrate/TemplateMigrateCommand.php
+
+		-
+			message: '#^Call to an undefined method MicroweberPackages\\LaravelTemplates\\Commands\\Migrate\\TemplateMigrateCommand\:\:getInfo\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/Commands/Migrate/TemplateMigrateCommand.php
+
+		-
+			message: '#^Call to an undefined method MicroweberPackages\\LaravelTemplates\\Commands\\Migrate\\TemplateMigrateCommand\:\:hasOption\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/Commands/Migrate/TemplateMigrateCommand.php
+
+		-
+			message: '#^Call to an undefined method MicroweberPackages\\LaravelTemplates\\Commands\\Migrate\\TemplateMigrateCommand\:\:option\(\)\.$#'
+			identifier: method.notFound
+			count: 2
+			path: src/Commands/Migrate/TemplateMigrateCommand.php
+
+		-
+			message: '#^Call to method configureConfirmable\(\) on an unknown class Nwidart\\Modules\\Contracts\\ConfirmableCommand\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Commands/Migrate/TemplateMigrateCommand.php
+
+		-
+			message: '#^Call to method confirmToProceed\(\) on an unknown class Nwidart\\Modules\\Contracts\\ConfirmableCommand\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Commands/Migrate/TemplateMigrateCommand.php
+
+		-
+			message: '#^Call to method getConfirmableLabel\(\) on an unknown class Nwidart\\Modules\\Contracts\\ConfirmableCommand\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Commands/Migrate/TemplateMigrateCommand.php
+
+		-
+			message: '#^Call to method isProhibited\(\) on an unknown class Nwidart\\Modules\\Contracts\\ConfirmableCommand\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Commands/Migrate/TemplateMigrateCommand.php
+
+		-
+			message: '#^Class Nwidart\\Modules\\Contracts\\ConfirmableCommand not found\.$#'
+			identifier: class.notFound
+			count: 2
+			path: src/Commands/Migrate/TemplateMigrateCommand.php
+
+		-
+			message: '#^Class Nwidart\\Modules\\Module not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Commands/Migrate/TemplateMigrateCommand.php
+
+		-
+			message: '#^MicroweberPackages\\LaravelTemplates\\Commands\\Migrate\\TemplateMigrateCommand\:\:__construct\(\) calls parent\:\:__construct\(\) but MicroweberPackages\\LaravelTemplates\\Commands\\Migrate\\TemplateMigrateCommand does not extend any class\.$#'
+			identifier: class.noParent
+			count: 1
+			path: src/Commands/Migrate/TemplateMigrateCommand.php
+
+		-
+			message: '#^Access to an undefined property MicroweberPackages\\LaravelTemplates\\Commands\\Publish\\TemplateAssetPublisher\:\:\$console\.$#'
+			identifier: property.notFound
+			count: 5
+			path: src/Commands/Publish/TemplateAssetPublisher.php
+
+		-
+			message: '#^Access to an undefined property MicroweberPackages\\LaravelTemplates\\Commands\\Publish\\TemplateAssetPublisher\:\:\$error\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Commands/Publish/TemplateAssetPublisher.php
+
+		-
+			message: '#^Access to an undefined property MicroweberPackages\\LaravelTemplates\\Commands\\Publish\\TemplateAssetPublisher\:\:\$module\.$#'
+			identifier: property.notFound
+			count: 3
+			path: src/Commands/Publish/TemplateAssetPublisher.php
+
+		-
+			message: '#^Access to an undefined property MicroweberPackages\\LaravelTemplates\\Commands\\Publish\\TemplateAssetPublisher\:\:\$showMessage\.$#'
+			identifier: property.notFound
+			count: 2
+			path: src/Commands/Publish/TemplateAssetPublisher.php
+
+		-
+			message: '#^Call to an undefined method MicroweberPackages\\LaravelTemplates\\Commands\\Publish\\TemplateAssetPublisher\:\:getDestinationPath\(\)\.$#'
+			identifier: method.notFound
+			count: 2
+			path: src/Commands/Publish/TemplateAssetPublisher.php
+
+		-
+			message: '#^Call to an undefined method MicroweberPackages\\LaravelTemplates\\Commands\\Publish\\TemplateAssetPublisher\:\:getFilesystem\(\)\.$#'
+			identifier: method.notFound
+			count: 4
+			path: src/Commands/Publish/TemplateAssetPublisher.php
+
+		-
+			message: '#^Call to an undefined method MicroweberPackages\\LaravelTemplates\\Commands\\Publish\\TemplateAssetPublisher\:\:getModule\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/Commands/Publish/TemplateAssetPublisher.php
+
+		-
+			message: '#^Call to method getPath\(\) on an unknown class Nwidart\\Modules\\Support\\Config\\GeneratorPath\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Commands/Publish/TemplateAssetPublisher.php
+
+		-
+			message: '#^Access to an undefined property MicroweberPackages\\LaravelTemplates\\Commands\\Publish\\TemplatePublishCommand\:\:\$components\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Commands/Publish/TemplatePublishCommand.php
+
+		-
+			message: '#^Access to an undefined property MicroweberPackages\\LaravelTemplates\\Commands\\Publish\\TemplatePublishCommand\:\:\$laravel\.$#'
+			identifier: property.notFound
+			count: 4
+			path: src/Commands/Publish/TemplatePublishCommand.php
+
+		-
+			message: '#^Access to undefined constant MicroweberPackages\\LaravelTemplates\\Commands\\Publish\\TemplatePublishCommand\:\:ALL\.$#'
+			identifier: classConstant.notFound
+			count: 3
+			path: src/Commands/Publish/TemplatePublishCommand.php
+
+		-
+			message: '#^Call to an undefined method MicroweberPackages\\LaravelTemplates\\Commands\\Publish\\TemplateAssetPublisher\:\:setRepository\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/Commands/Publish/TemplatePublishCommand.php
+
+		-
+			message: '#^Call to an undefined method MicroweberPackages\\LaravelTemplates\\Commands\\Publish\\TemplatePublishCommand\:\:hasOption\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/Commands/Publish/TemplatePublishCommand.php
+
+		-
+			message: '#^Class MicroweberPackages\\LaravelTemplates\\Commands\\Publish\\TemplateAssetPublisher does not have a constructor and must be instantiated without any parameters\.$#'
+			identifier: new.noConstructor
+			count: 1
+			path: src/Commands/Publish/TemplatePublishCommand.php
+
+		-
+			message: '#^Class Nwidart\\Modules\\Module not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Commands/Publish/TemplatePublishCommand.php
+
+		-
+			message: '#^Call to an undefined method MicroweberPackages\\LaravelTemplates\\Generators\\TemplateGenerator\:\:generateFiles\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/Generators/TemplateGenerator.php
+
+		-
+			message: '#^Call to an undefined method MicroweberPackages\\LaravelTemplates\\Generators\\TemplateGenerator\:\:generateGitKeep\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/Generators/TemplateGenerator.php
+
+		-
+			message: '#^Call to an undefined method MicroweberPackages\\LaravelTemplates\\Generators\\TemplateGenerator\:\:getFolders\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/Generators/TemplateGenerator.php
+
+		-
+			message: '#^Call to an undefined method MicroweberPackages\\LaravelTemplates\\Generators\\TemplateGenerator\:\:getModuleNamespaceReplacement\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/Generators/TemplateGenerator.php
+
+		-
+			message: '#^Call to an undefined method MicroweberPackages\\LaravelTemplates\\Generators\\TemplateGenerator\:\:getName\(\)\.$#'
+			identifier: method.notFound
+			count: 7
+			path: src/Generators/TemplateGenerator.php
+
+		-
+			message: '#^Call to an undefined method MicroweberPackages\\LaravelTemplates\\Generators\\TemplateGenerator\:\:getReplacement\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/Generators/TemplateGenerator.php
+
+		-
+			message: '#^Call to an undefined method MicroweberPackages\\LaravelTemplates\\Generators\\TemplateGenerator\:\:getStudlyNameReplacement\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/Generators/TemplateGenerator.php
+
+		-
+			message: '#^Call to method delete\(\) on an unknown class Nwidart\\Modules\\Module\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Generators/TemplateGenerator.php
+
+		-
+			message: '#^Call to method generate\(\) on an unknown class Nwidart\\Modules\\Support\\Config\\GeneratorPath\.$#'
+			identifier: class.notFound
+			count: 2
+			path: src/Generators/TemplateGenerator.php
+
+		-
+			message: '#^Call to method getModulePath\(\) on an unknown class Nwidart\\Modules\\Module\.$#'
+			identifier: class.notFound
+			count: 4
+			path: src/Generators/TemplateGenerator.php
+
+		-
+			message: '#^Call to method getPath\(\) on an unknown class Nwidart\\Modules\\Support\\Config\\GeneratorPath\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Generators/TemplateGenerator.php
+
+		-
+			message: '#^Call to method has\(\) on an unknown class Nwidart\\Modules\\Module\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Generators/TemplateGenerator.php
+
+		-
+			message: '#^Call to method render\(\) on an unknown class Nwidart\\Modules\\Support\\Stub\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Generators/TemplateGenerator.php
+
+		-
+			message: '#^Call to method setActiveByName\(\) on an unknown class Nwidart\\Modules\\Contracts\\ActivatorInterface\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Generators/TemplateGenerator.php
+
+		-
+			message: '#^Call to method setBasePath\(\) on an unknown class Nwidart\\Modules\\Support\\Stub\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Generators/TemplateGenerator.php
+
+		-
+			message: '#^Instantiated class Nwidart\\Modules\\Support\\Stub not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Generators/TemplateGenerator.php
+
+		-
+			message: '#^PHPDoc tag @var for property MicroweberPackages\\LaravelTemplates\\Generators\\TemplateGenerator\:\:\$activator with type MicroweberPackages\\LaravelTemplates\\Contracts\\TemplateActivatorInterface is not subtype of native type Nwidart\\Modules\\Contracts\\ActivatorInterface\|null\.$#'
+			identifier: property.phpDocType
+			count: 1
+			path: src/Generators/TemplateGenerator.php
+
+		-
+			message: '#^Property MicroweberPackages\\LaravelTemplates\\Generators\\TemplateGenerator\:\:\$activator \(Nwidart\\Modules\\Contracts\\ActivatorInterface\|null\) does not accept MicroweberPackages\\LaravelTemplates\\Contracts\\TemplateActivatorInterface\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: src/Generators/TemplateGenerator.php
+
+		-
+			message: '#^Property MicroweberPackages\\LaravelTemplates\\Generators\\TemplateGenerator\:\:\$activator \(Nwidart\\Modules\\Contracts\\ActivatorInterface\|null\) does not accept MicroweberPackages\\LaravelTemplates\\Contracts\\TemplateActivatorInterface\|null\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: src/Generators/TemplateGenerator.php
+
+		-
+			message: '#^Property MicroweberPackages\\LaravelTemplates\\Generators\\TemplateGenerator\:\:\$activator has unknown class Nwidart\\Modules\\Contracts\\ActivatorInterface as its type\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Generators/TemplateGenerator.php
+
+		-
+			message: '#^Property MicroweberPackages\\LaravelTemplates\\Generators\\TemplateGenerator\:\:\$module \(Nwidart\\Modules\\Module\) does not accept MicroweberPackages\\LaravelTemplates\\Repositories\\LaravelTemplatesFileRepository\|null\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: src/Generators/TemplateGenerator.php
+
+		-
+			message: '#^Property MicroweberPackages\\LaravelTemplates\\Generators\\TemplateGenerator\:\:\$module has unknown class Nwidart\\Modules\\Module as its type\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Generators/TemplateGenerator.php
+
+		-
+			message: '#^Constant DS not found\.$#'
+			identifier: constant.notFound
+			count: 2
+			path: src/Helpers/StaticTemplateCreator.php
+
+		-
+			message: '#^Variable \$moduleJson in empty\(\) always exists and is not falsy\.$#'
+			identifier: empty.variable
+			count: 1
+			path: src/Helpers/StaticTemplateCreator.php
+
+		-
+			message: '#^Access to property \$templates on an unknown class Laravel\\Lumen\\Application\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/LaravelTemplate.php
+
+		-
+			message: '#^Call to an undefined method Illuminate\\Contracts\\Cache\\Repository\:\:flush\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/LaravelTemplate.php
+
+		-
+			message: '#^Call to an undefined method MicroweberPackages\\LaravelTemplates\\Contracts\\TemplateActivatorInterface\:\:enable\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/LaravelTemplate.php
+
+		-
+			message: '#^Call to an undefined method MicroweberPackages\\LaravelTemplates\\Contracts\\TemplateActivatorInterface\:\:hasStatus\(\)\.$#'
+			identifier: method.notFound
+			count: 2
+			path: src/LaravelTemplate.php
+
+		-
+			message: '#^Call to an undefined method MicroweberPackages\\LaravelTemplates\\LaravelTemplate\:\:fireEvent\(\)\.$#'
+			identifier: method.notFound
+			count: 2
+			path: src/LaravelTemplate.php
+
+		-
+			message: '#^Call to an undefined method MicroweberPackages\\LaravelTemplates\\LaravelTemplate\:\:getSnakeName\(\)\.$#'
+			identifier: method.notFound
+			count: 2
+			path: src/LaravelTemplate.php
+
+		-
+			message: '#^Call to method getCachedConfigPath\(\) on an unknown class Laravel\\Lumen\\Application\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/LaravelTemplate.php
+
+		-
+			message: '#^Call to method getCachedServicesPath\(\) on an unknown class Laravel\\Lumen\\Application\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/LaravelTemplate.php
+
+		-
+			message: '#^Property MicroweberPackages\\LaravelModules\\LaravelModule\:\:\$app \(Illuminate\\Contracts\\Foundation\\Application\|Laravel\\Lumen\\Application\) does not accept Illuminate\\Container\\Container\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: src/LaravelTemplate.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Foundation\\Application\:\:\$config\.$#'
+			identifier: property.notFound
+			count: 3
+			path: src/LaravelTemplatesServiceProvider.php
+
+		-
+			message: '#^Access to an undefined property MicroweberPackages\\LaravelTemplates\\LaravelTemplatesServiceProvider\:\:\$app\.$#'
+			identifier: property.notFound
+			count: 10
+			path: src/LaravelTemplatesServiceProvider.php
+
+		-
+			message: '#^Call to an undefined method MicroweberPackages\\LaravelTemplates\\Contracts\\TemplatesRepositoryInterface\:\:config\(\)\.$#'
+			identifier: method.notFound
+			count: 2
+			path: src/LaravelTemplatesServiceProvider.php
+
+		-
+			message: '#^Call to an undefined method MicroweberPackages\\LaravelTemplates\\LaravelTemplatesServiceProvider\:\:loadMigrationsFrom\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/LaravelTemplatesServiceProvider.php
+
+		-
+			message: '#^Call to static method missingConfig\(\) on an unknown class Nwidart\\Modules\\Exceptions\\InvalidActivatorClass\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/LaravelTemplatesServiceProvider.php
+
+		-
+			message: '#^Call to static method setBasePath\(\) on an unknown class Nwidart\\Modules\\Support\\Stub\.$#'
+			identifier: class.notFound
+			count: 2
+			path: src/LaravelTemplatesServiceProvider.php
+
+		-
+			message: '#^Call to an undefined static method MicroweberPackages\\LaravelTemplates\\Models\\SystemTemplates\:\:where\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 2
+			path: src/Models/SystemTemplates.php
+
+		-
+			message: '#^PHPDoc type array of property MicroweberPackages\\LaravelTemplates\\Models\\SystemTemplates\:\:\$fillable is not covariant with PHPDoc type array\<int, string\> of overridden property Illuminate\\Database\\Eloquent\\Model\:\:\$fillable\.$#'
+			identifier: property.phpDocType
+			count: 1
+			path: src/Models/SystemTemplates.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Foundation\\Application\:\:\$config\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Repositories/LaravelTemplatesFileRepository.php
+
+		-
+			message: '#^Call to an undefined method MicroweberPackages\\LaravelModules\\LaravelModule\:\:boot\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/Repositories/LaravelTemplatesFileRepository.php
+
+		-
+			message: '#^Call to an undefined method MicroweberPackages\\LaravelModules\\LaravelModule\:\:register\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/Repositories/LaravelTemplatesFileRepository.php
+
+		-
+			message: '#^Call to static method startMeasure\(\) on an unknown class Fruitcake\\LaravelDebugbar\\Facades\\Debugbar\.$#'
+			identifier: class.notFound
+			count: 3
+			path: src/Repositories/LaravelTemplatesFileRepository.php
+
+		-
+			message: '#^Call to static method stopMeasure\(\) on an unknown class Fruitcake\\LaravelDebugbar\\Facades\\Debugbar\.$#'
+			identifier: class.notFound
+			count: 3
+			path: src/Repositories/LaravelTemplatesFileRepository.php
+
+		-
+			message: '#^Instantiated class Nwidart\\Modules\\Collection not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Repositories/LaravelTemplatesFileRepository.php
+
+		-
+			message: '#^Iterating over an object of an unknown class Nwidart\\Modules\\Collection\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Repositories/LaravelTemplatesFileRepository.php
+
+		-
+			message: '#^Method MicroweberPackages\\LaravelTemplates\\Repositories\\LaravelTemplatesFileRepository\:\:createModule\(\) has invalid return type Nwidart\\Modules\\Laravel\\Module\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Repositories/LaravelTemplatesFileRepository.php
+
+		-
+			message: '#^Method MicroweberPackages\\LaravelTemplates\\Repositories\\LaravelTemplatesFileRepository\:\:toCollection\(\) has invalid return type Nwidart\\Modules\\Collection\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Repositories/LaravelTemplatesFileRepository.php
+
+		-
+			message: '#^Property MicroweberPackages\\LaravelModules\\Repositories\\LaravelModulesFileRepository\:\:\$app \(Illuminate\\Contracts\\Foundation\\Application\|Laravel\\Lumen\\Application\) does not accept Illuminate\\Container\\Container\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: src/Repositories/LaravelTemplatesFileRepository.php
+
+		-
+			message: '#^Property MicroweberPackages\\LaravelModules\\Repositories\\LaravelModulesFileRepository\:\:\$cacheRepository \(MicroweberPackages\\LaravelModules\\Repositories\\LaravelModulesCacheRepository\) does not accept MicroweberPackages\\LaravelTemplates\\Contracts\\LaravelTemplatesCacheRepositoryContract\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: src/Repositories/LaravelTemplatesFileRepository.php
+
+		-
+			message: '#^Method MicroweberPackages\\LaravelTemplates\\Support\\TemplateGenerateConfigReader\:\:read\(\) has invalid return type Nwidart\\Modules\\Support\\Config\\GeneratorPath\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Support/TemplateGenerateConfigReader.php
+
+		-
+			message: '#^Method MicroweberPackages\\LaravelTemplates\\Support\\TemplateGenerateConfigReader\:\:read\(\) should return Nwidart\\Modules\\Support\\Config\\GeneratorPath but returns MicroweberPackages\\LaravelTemplates\\Support\\TemplateGeneratorPath\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Support/TemplateGenerateConfigReader.php
+
+		-
+			message: '#^Call to an undefined method MicroweberPackages\\LaravelTemplates\\Support\\TemplateGeneratorPath\:\:path_namespace\(\)\.$#'
+			identifier: method.notFound
+			count: 4
+			path: src/Support/TemplateGeneratorPath.php
+
+		-
+			message: '#^Call to an undefined method MicroweberPackages\\LaravelTemplates\\Support\\TemplateGeneratorPath\:\:studly_namespace\(\)\.$#'
+			identifier: method.notFound
+			count: 2
+			path: src/Support/TemplateGeneratorPath.php
+
+		-
+			message: '#^Function module_vite not found\.$#'
+			identifier: function.notFound
+			count: 1
+			path: src/templates_helpers.php
