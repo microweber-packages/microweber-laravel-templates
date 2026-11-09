@@ -25,12 +25,6 @@ parameters:
 			path: src/Activators/LaravelTemplatesDatabaseActivator.php
 
 		-
-			message: '#^Access to an undefined property Illuminate\\Foundation\\Application\:\:\$config\.$#'
-			identifier: property.notFound
-			count: 1
-			path: src/Activators/TemplatesFileActivator.php
-
-		-
 			message: '#^Call to an undefined method Nwidart\\Modules\\Generators\\ModuleGenerator\:\:setTemplatesActivator\(\)\.$#'
 			identifier: method.notFound
 			count: 1
@@ -109,12 +103,6 @@ parameters:
 			path: src/LaravelTemplate.php
 
 		-
-			message: '#^Access to an undefined property Illuminate\\Foundation\\Application\:\:\$config\.$#'
-			identifier: property.notFound
-			count: 3
-			path: src/LaravelTemplatesServiceProvider.php
-
-		-
 			message: '#^Call to an undefined method MicroweberPackages\\LaravelTemplates\\Contracts\\TemplatesRepositoryInterface\:\:config\(\)\.$#'
 			identifier: method.notFound
 			count: 2
@@ -133,31 +121,19 @@ parameters:
 			path: src/Models/SystemTemplates.php
 
 		-
-			message: '#^Access to an undefined property Illuminate\\Foundation\\Application\:\:\$config\.$#'
-			identifier: property.notFound
-			count: 1
-			path: src/Repositories/LaravelTemplatesFileRepository.php
-
-		-
-			message: '#^Call to static method startMeasure\(\) on an unknown class Fruitcake\\LaravelDebugbar\\Facades\\Debugbar\.$#'
-			identifier: class.notFound
+			message: '#^Call to an undefined static method Fruitcake\\LaravelDebugbar\\Facades\\Debugbar\:\:startMeasure\(\)\.$#'
+			identifier: staticMethod.notFound
 			count: 3
 			path: src/Repositories/LaravelTemplatesFileRepository.php
 
 		-
-			message: '#^Call to static method stopMeasure\(\) on an unknown class Fruitcake\\LaravelDebugbar\\Facades\\Debugbar\.$#'
-			identifier: class.notFound
+			message: '#^Call to an undefined static method Fruitcake\\LaravelDebugbar\\Facades\\Debugbar\:\:stopMeasure\(\)\.$#'
+			identifier: staticMethod.notFound
 			count: 3
 			path: src/Repositories/LaravelTemplatesFileRepository.php
 
 		-
 			message: '#^Property MicroweberPackages\\LaravelModules\\Repositories\\LaravelModulesFileRepository\:\:\$app \(Illuminate\\Contracts\\Foundation\\Application\|Laravel\\Lumen\\Application\) does not accept Illuminate\\Container\\Container\.$#'
-			identifier: assign.propertyType
-			count: 1
-			path: src/Repositories/LaravelTemplatesFileRepository.php
-
-		-
-			message: '#^Property MicroweberPackages\\LaravelModules\\Repositories\\LaravelModulesFileRepository\:\:\$cacheRepository \(MicroweberPackages\\LaravelModules\\Repositories\\LaravelModulesCacheRepository\) does not accept MicroweberPackages\\LaravelTemplates\\Contracts\\LaravelTemplatesCacheRepositoryContract\.$#'
 			identifier: assign.propertyType
 			count: 1
 			path: src/Repositories/LaravelTemplatesFileRepository.php
